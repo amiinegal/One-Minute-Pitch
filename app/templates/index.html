@@ -1,0 +1,55 @@
+{% extends 'base.html'%}
+
+<!-- Styles block -->
+
+{% block styles%} {{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}"> {% endblock %}
+<!-- Content block -->
+
+{% block content %}
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Noto+Serif+KR|Oswald" rel="stylesheet">
+<div class="jumbotron mt-0 mb-0" style="text-align: center;
+background-color:white; font-family:
+'Open Sans', sans-serif;">
+
+    
+
+    <div class="container" id="index-container">
+        <div class="row welcome">
+            <h1 id="title-home" style="font-size:100px; color: black;">One Minute Pitch</h1>
+            <h3 style="font-family: 'Noto Serif KR', sans-serif;">60 seconds.
+                That's all you have to impress someone. Use that minute wisely here.
+
+                <br>
+                <br>
+                <div class="jumbo" style="font-family: 'Oswald', sans-serif;">
+                <button type="button" class="btn btn-warning btn-lg" style="color: white;"><a href="auth/register">Register An Account</a></button>
+                <br>
+                <br>
+                <button type="button" class="btn btn-warning btn-lg text-white"><a href="auth/login">Sign In</a></button>
+                 <br>
+                <br>
+                <button type="button" class="btn btn-warning btn-lg"><a href="/pitch/new">Pitch Your Idea</a></button>
+                 <br>
+                <br>
+                <button type="button" class="btn btn-warning btn-lg"><a href="{{url_for('main.pitch_list')}}">View Pitches</a></button>
+                <br>
+                <br>
+</div>
+            </h3>
+        </div>
+
+    </div>
+</div>
+
+<div class="jumbotron text-center" id="body" style="text-align: center
+background-color white
+font-family 'Noto Serif KR', sans-serif">
+  <nav class="navbar navbar-dark mt-0 mb-0 fixed-bottom text-dark text-center d-flex justify-content-center">
+   
+  </nav>
+</div>
+
+
+
+{% endblock%}
