@@ -16,10 +16,10 @@ _amin egal_
 ### BDD
 | Behaviour  |Input   |Output   |
 |:-:|---|---|
-| _Register   | email address,username,password  |takes you to the homepage_   |
-| _submit pitch  | choose a category and pitch based on your pick and submit | adds to list of pitches_  |
-|  _profile | add a profile picture and submit  | profile picture is poster_  |
-|  _sign out | click  | redirects to the homepage_  |
+| _Register_   | email address,username,password  |takes you to the homepage   |
+| _submit pitch_  | choose a category and pitch based on your pick and submit | adds to list of pitches  |
+|  _profile_ | add a profile picture and submit  | profile picture is poster  |
+|  _sign out_ | click  | redirects to the homepage  |
 ### Known Bugs
 No Bugs
 
@@ -31,8 +31,8 @@ No Bugs
 * _Dependencies_
 * _pip_
 ### Support and contact details
-Telephone: _0741080373_ 
-Email: _amiinegal34@gmail.com_
+* Telephone: _0741080373_ 
+* Email: _amiinegal34@gmail.com_
 
 ### Licensing
 ### MIT License
