@@ -1,19 +1,13 @@
 % extends 'base.html' %} {% import 'bootstrap/wtf.html' as wtf %} {% block content %}
 
-<div class="jumbotron" style="text-align:center; background-color: white;">
-<h1>GENERAL PITCHES</h1>
+<div class="jumbotron" style="text-align:center; background-color: rgb(255, 255, 255);">
+<h1> PITCHES</h1>
 <article class="media content-section">
   <div class="media-body">
     <div class="article-metadata">
       <a class="mr-2" href="#">{{ pitch.user_id.username }}</a>
-      <small class="text-muted">{{ pitch.time }}</small>
+      <small class="text-muted">{{ pitch.time.strftime('%Y-%m-%d') }}</small>
 
-      <!--{% if pitch.user_id == current_user %}-->
-      <!--<div class="">-->
-        <!--<a class="btn btn-secondary btn-sm m-1" href="{{ url_for('main.update_pitch', pitch_id=pitch.id) }}">Update</a>-->
-        <!--<button type="button" class="btn btn-danger btn-sm m-1" data-toggle="modal" data-target="#deleteModal">Delete</button>-->
-      <!--</div>-->
-      <!--{% endif %}-->
     </div>
     <h2 class="article-title">{{ pitch.title }}</h2>
     <p class="article-content">{{ pitch.content }}</p>
