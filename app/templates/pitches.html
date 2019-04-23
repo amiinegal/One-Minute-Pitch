@@ -10,7 +10,7 @@
   <div class="media-body">
     <div class="article-metadata">
       <a class="mr-2" href="#">{{ pitch.user.username }}</a>
-      <small class="text-muted">{{ pitch.time }}</small>
+      <small class="text-muted">{{ pitch.time.strftime('%Y-%m-%d') }}</small>
     </div>
 
     <h2><a class="article-title" href="{{ url_for('main.pitch', pitch_id=pitch.id) }}">{{ pitch.title }}</a></h2>
