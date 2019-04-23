@@ -27,3 +27,4 @@ class CategoryForm(FlaskForm):
 class UpdateProfile(FlaskForm):
     bio = TextAreaField('Tell us about you.')
     submit = SubmitField('Submit')
+

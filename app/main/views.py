@@ -13,7 +13,7 @@ def index():
     return render_template('index.html')
 
 
-# VIEWING EACH SPECIFIC PROFILE
+
 @main.route('/user/<uname>')
 @login_required
 def profile(uname):
@@ -76,8 +76,7 @@ def new_pitch():
         db.session.commit()
 
         # pitch.save_pitch(pitch)
-        print('kasambuli')
-        flash('Your pitch has been created!', 'success')
+        
         return redirect(url_for('main.single_pitch',id=pitch.id))
 
     return render_template('new_pitch.html', title='New Post', pitch_form=form, legend='New Post')
@@ -190,3 +189,5 @@ def view_pitch(id):
        pitch.save_pitch()
        return redirect("/view/{pitch_id}".format(pitch_id=id))
     return render_template('view_pitch.html',pitch = pitch)
+
+
