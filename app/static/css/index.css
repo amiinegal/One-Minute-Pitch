@@ -28,3 +28,21 @@ input[type=submit] { align-self: start; min-width: 10em; }
 #loginForm{
     background-color: aquamarine;
 }
+
+.container{
+    background-color: darkslategrey;
+}
+h3{
+    color: whitesmoke;
+}
+img{
+    background-clip: content-box;
+    box-shadow: darkgrey;
+
+}
+jumbotron{
+    text-decoration: darkslategray;
+    backface-visibility: hidden;
+    background-color: cadetblue;
+    
+}
