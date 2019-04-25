@@ -123,7 +123,7 @@ def pitch(pitch_id):
 # ADDING A NEW COMMENT TO A PITCH
 @main.route('/pitch/comment/new/<int:id>', methods = ['GET','POST'])
 @login_required
-def new_comment(id):
+def comment_pitch(id):
     '''
     view category that returns a form to create a new comment
     '''
@@ -135,15 +135,15 @@ def new_comment(id):
         comment = form.comment.data
 
         # comment instance
-        new_comment = Comment(pitch_id = pitch.id, post_comment = comment, title=title, user = current_user)
+        comment_pitch = Comment(pitch_id = pitch.id, post_comment = comment, title=title, user = current_user)
 
         # save comment
-        new_comment.save_comment()
+        comment_pitch.save_comment()
 
         return redirect(url_for('.pitches', id = pitch.id ))
 
     title = f'{pitch.title} comment'
-    return render_template('new_comment.html', title = title, comment_form = form, pitch = pitch, )
+    return render_template('comments.html', title = title, comment_form = form, pitch = pitch, )
 
 # UPDATING A PITCH
 
