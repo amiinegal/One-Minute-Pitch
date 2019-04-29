@@ -41,7 +41,7 @@ def login():
 
             # redirect to the index page after login
 
-            return redirect(request.args.get('next') or url_for('main.index'))
+            return redirect(request.args.get('next') or url_for('main.new_pitch'))
 
         # when login details are incorrect
 

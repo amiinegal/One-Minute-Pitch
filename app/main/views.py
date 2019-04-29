@@ -57,7 +57,7 @@ def update_pic(uname):
     return redirect(url_for('main.profile',uname=uname))
 
 # ADDING A NEW PITCH
-@main.route('/', methods=['GET','POST'])
+@main.route('/pitch/new', methods=['GET','POST'])
 @login_required
 def new_pitch():
     form = PitchForm()

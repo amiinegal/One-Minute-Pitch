@@ -1,4 +1,3 @@
-
 import unittest
 from app.models import Pitch,User
 from flask_login import current_user

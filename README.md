@@ -8,11 +8,12 @@ _amin egal_
 #### Setup and installation
 * _Search for `repository name`_
 * _Click on `clone/download` to get import link_
-* _Install nvm for better versioning of angular on local machine_
-* _Install angular bootstrap designed for angular application development._
-* _The app depends on git and git hub for a local and remote link._
-* _Use of source code for malicious intent may be followed up with legal action and is independent of the source code._
+* Install the prerequisites either globally or in a virtual environment.
+* Install via pip:
+            ``` pip install -r requirements.txt ```
 
+* Run by:
+           ``` pyhton3.6 manage.py server ``` 
 ### BDD
 | Behaviour  |Input   |Output   |
 |:-:|---|---|
